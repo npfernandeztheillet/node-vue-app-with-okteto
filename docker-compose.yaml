@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  api:
+    build: ./node-backend
+    container_name: nodec
+    ports:
+      - '4000:4000'
+    volumes:
+      - ./node-backend:/app
+  frontend:
+    build: ./vue-frontend
+    container_name: vuec
+    ports:
+      - "8080:5173"
+    volumes:
+      - ./vue-frontend:/app
+   
+
