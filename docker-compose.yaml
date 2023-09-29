@@ -7,12 +7,12 @@ services:
       - '4000:4000'
     volumes:
       - ./node-backend:/app
-  frontend:
-    build: ./vue-frontend
-    container_name: vuec
-    ports:
-      - "8080:5173"
-    volumes:
-      - ./vue-frontend:/app
+  #frontend:
+  #  build: ./vue-frontend
+  #  container_name: vuec
+  #  ports:
+  #    - "8080:5173"
+  #  volumes:
+  #    - ./vue-frontend:/app
    
 
