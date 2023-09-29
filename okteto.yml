@@ -1,0 +1,5 @@
+name: node-test.api
+
+deploy:
+  compose:
+    file: docker-compose.yml
